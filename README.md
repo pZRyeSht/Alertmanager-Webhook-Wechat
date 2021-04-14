@@ -8,6 +8,8 @@ Promethues alertmanager webhook wechat 实现
 
 RobotKey即为企业微信生成机器人的key值，也是项目初始化设置的default key。
 
+编辑alertmanager config或者prometheus config
+
 ## alertmanager config
 ```shell
 sudo vim /etc/alertmanager/alertmanager.yml
@@ -26,7 +28,7 @@ receivers:
     webhook_configs:
     - url: 'http://localhost:6666/webhook?key=xxxxxx-xxxxx-xxxxx-xxxxxx-xxxxxxx'
 ```
-##OR
+
 ## prometheus config
 ```shell
 sudo vim /etc/prometheus/alert.rules.yml
